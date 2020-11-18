@@ -1,0 +1,32 @@
+<%#if @user.errors.any? %>
+<!--  <ul>-->
+    <%#=@user.errors.full_messages.each do |msg| %>
+<!--    <li><%#=msg %></li>-->
+    <%#end %>
+<!--  </ul>-->
+<%#end %>
+
+
+  <%#=form_for(@user, :html => {:class => "ui form"}) do |f| %>
+<!--<div class="field">-->
+    <%#=f.label :username %>
+    <%#=f.text_field :username, placeholder:"username" %>
+<!--  </div>-->
+<!--  <div class="field">-->
+    <%#=f.label :email %>
+    <%#=f.email_field :email, placeholder:"email" %>
+<!--  </div>-->
+<!--    <div class="field">-->
+      <%#=f.label :password %>
+      <%#=f.password_field :password, placeholder:"password" %>
+<!--    </div>-->
+
+<!--    <div class="field">-->
+<!--    <div class="ui checkbox">-->
+<!--      <input type="checkbox" tabindex="0" class="hidden">-->
+<!--      <label>I agree to the Terms and Conditions</label>-->
+<!--    </div>-->
+<!--  </div>-->
+    <%#=f.submit "Signup", class:"ui button"%>
+<!--    "-->
+    <%#end %>

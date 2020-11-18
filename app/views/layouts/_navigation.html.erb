@@ -1,0 +1,25 @@
+<a class="item">
+  <%=link_to 'Chatroom',root_path, class:"design-link" %>
+</a>
+<a class="item">
+  <%#=link_to 'Messages',login_path, class:"design-link" %>
+
+</a>
+<div class="right menu">
+  <div class="ui dropdown item">
+    Language <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item">Logout</a>
+      <a class="item">Login</a>
+      <a class="item">signup</a>
+    </div>
+  </div>
+  <div class="item">
+<%     if user_signed_in?%>
+      <%= link_to('Logout', destroy_user_session_path, method: :delete, class:"ui primary button")%>
+<%else %>
+      <%= link_to('Log in', user_registration_path, method: :delete, class:"ui primary button")%>
+
+      <%end %>
+  </div>
+</div>
